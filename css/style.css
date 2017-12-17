@@ -1,3 +1,76 @@
-body{
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,400i,500i,700,700i,800,800i');
+
+* {
 	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+}
+
+.header {
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	z-index: 3;
+	background-color: #f34c5a;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.logo {
+	height: 60px;
+	background-image: url(../image/short.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.burger {
+	position: relative;
+
+}
+.burger-image {
+	height: 30px;
+	width: 30px;
+}
+
+.burger ul {
+	margin-top: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-padding-start: 0;
+}
+
+.burger ul li {
+	list-style: none;
+	border-bottom: #31B89A;
+	border-width: 1px;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #424A5F;
+	padding: 0;
+	margin: 0;
+}
+.burger ul li a {
+	text-decoration: none;
+	color: #E7ECED;
+	padding: 10px;
+	padding-top: 10px;
+}
+
+.list-burger {
+	position: absolute;
+	display: block;
+}
+
+#list-burger {
+	display: none;
 }
